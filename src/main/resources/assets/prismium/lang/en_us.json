@@ -1,4 +1,14 @@
 {
   "item.prismium.prismium": "Prismium",
-  "item.prismium.prismarite": "Prismarite"
+  "item.prismium.prismarite": "Prismarite",
+  "item.prismium.chisel": "Chisel",
+
+  "block.prismium.prismium_block": "Prismium Block",
+  "block.prismium.prismarite_block": "Prismarite Block",
+  "block.prismium.magic_block": "Magic Block",
+
+  "itemgroup.prismium.prismium_items": "Prismium Items",
+  "itemgroup.prismium.prismium_blocks": "Prismium Blocks",
+
+
 }
