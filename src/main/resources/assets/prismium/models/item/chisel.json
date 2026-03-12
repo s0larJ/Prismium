@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "prismium:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "prismium:used": 1
+      },
+      "model": "prismium:item/chisel_used"
+    }
+  ]
+}

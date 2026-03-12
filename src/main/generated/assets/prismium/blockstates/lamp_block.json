@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "prismium:block/lamp_block"
+    },
+    "clicked=true": {
+      "model": "prismium:block/lamp_block_on"
+    }
+  }
+}
