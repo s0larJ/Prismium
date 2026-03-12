@@ -12,6 +12,7 @@ import net.s0larj.prismium.block.ModBlocks;
 
 public class ModItemGroups {
 
+    /*
     public static final ItemGroup PRISMIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Prismium.MOD_ID, "prismium_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PRISMIUM_BLOCK))
@@ -20,8 +21,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PRISMIUM_BLOCK);
                         entries.add(ModBlocks.PRISMARITE_BLOCK);
                         entries.add(ModBlocks.MAGIC_BLOCK);
+                        entries.add(ModBlocks.LAMP_BLOCK);
                     })
                     .build());
+    */
 
     public static final ItemGroup PRISMIUM_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Prismium.MOD_ID, "prismium_items"),
@@ -31,6 +34,16 @@ public class ModItemGroups {
                         entries.add(ModItems.PRISMIUM);
                         entries.add(ModItems.PRISMARITE);
                         entries.add(ModItems.CHISEL);
+                        entries.add(ModBlocks.PRISMIUM_BLOCK);
+                        entries.add(ModBlocks.PRISMARITE_BLOCK);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+                        entries.add(ModBlocks.LAMP_BLOCK);
+                        entries.add(ModItems.PRISMIUM_HELMET);
+                        entries.add(ModItems.PRISMIUM_CHESTPLATE);
+                        entries.add(ModItems.PRISMIUM_LEGGINGS);
+                        entries.add(ModItems.PRISMIUM_BOOTS);
+                        entries.add(ModItems.KAUPEN_BOW);
+                        entries.add(ModItems.TOMAHAWK);
                     })
                     .build());
 

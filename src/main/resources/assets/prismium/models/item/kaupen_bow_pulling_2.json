@@ -1,0 +1,6 @@
+{
+  "parent": "prismium:item/kaupen_bow",
+  "textures": {
+    "layer0": "prismium:item/kaupen_bow_pulling_2"
+  }
+}

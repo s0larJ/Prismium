@@ -1,16 +1,15 @@
 package net.s0larj.prismium.block;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.sound.BlockSoundGroup;
 import net.s0larj.prismium.Prismium;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.s0larj.prismium.block.custom.LampBlock;
 import net.s0larj.prismium.block.custom.MagicBlock;
 
 public class ModBlocks {
@@ -21,6 +20,9 @@ public class ModBlocks {
             requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create().strength(1f)));
+
+    public static final Block LAMP_BLOCK = registerBlock("lamp_block", new LampBlock(AbstractBlock.Settings.create().strength(1f)
+            .requiresTool().luminance(state -> state.get(LampBlock.CLICKED) ? 15 : 0)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

@@ -3,12 +3,28 @@
   "item.prismium.prismarite": "Prismarite",
   "item.prismium.chisel": "Chisel",
 
+  "item.prismium.prismium_helmet": "Prismium Helmet",
+  "item.prismium.prismium_chestplate": "Prismium Chestplate",
+  "item.prismium.prismium_leggings": "Prismium Leggings",
+  "item.prismium.prismium_boots": "Prismium Boots",
+
+  "item.prismium.kaupen_bow": "Bow 1",
+  "item.prismium.tomahawk": "Tomahawk",
+
   "block.prismium.prismium_block": "Prismium Block",
   "block.prismium.prismarite_block": "Prismarite Block",
   "block.prismium.magic_block": "Magic Block",
+  "block.prismium.lamp_block": "Lamp Block",
 
   "itemgroup.prismium.prismium_items": "Prismium Items",
   "itemgroup.prismium.prismium_blocks": "Prismium Blocks",
 
+  "tooltip.prismium.magic_block.tooltip": "Da custom go brrr §9BLUE§r",
+  "tooltip.prismium.magic_block.tooltip.2": "Da second line innit §8color§r",
 
+  "tooltip.prismium.chisel": "press shift nerd",
+  "tooltip.prismium.chisel.shift_down": "oh shift",
+
+  "tooltip.prismium.prismarite.tooltip": "prismarite",
+  "entity.prismium.tomahawk": "Tomahawk"
 }

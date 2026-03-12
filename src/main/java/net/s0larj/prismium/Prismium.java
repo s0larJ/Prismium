@@ -3,6 +3,7 @@ package net.s0larj.prismium;
 import net.fabricmc.api.ModInitializer;
 
 import net.s0larj.prismium.block.ModBlocks;
+import net.s0larj.prismium.component.ModDataComponentTypes;
 import net.s0larj.prismium.item.ModItemGroups;
 import net.s0larj.prismium.item.ModItems;
 import org.slf4j.Logger;
@@ -24,5 +25,7 @@ public class Prismium implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 	}
 }
