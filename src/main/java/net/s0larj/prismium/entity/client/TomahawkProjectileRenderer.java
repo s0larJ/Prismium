@@ -17,7 +17,7 @@ public class TomahawkProjectileRenderer extends EntityRenderer<TomahawkProjectil
 
     protected TomahawkProjectileModel model;
 
-    protected TomahawkProjectileRenderer(EntityRendererFactory.Context ctx) {
+    public TomahawkProjectileRenderer(EntityRendererFactory.Context ctx) {
         super(ctx);
         this.model = new TomahawkProjectileModel(ctx.getPart(TomahawkProjectileModel.TOMAHAWK));
     }

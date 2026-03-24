@@ -4,7 +4,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "prismium:item/tomahawk",
-		"particle": "prismium:item/tomahawk`"
+		"particle": "prismium:item/tomahawk"
 	},
 	"elements": [
 		{

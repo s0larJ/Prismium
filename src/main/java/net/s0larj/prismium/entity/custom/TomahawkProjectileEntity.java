@@ -1,22 +1,30 @@
 package net.s0larj.prismium.entity.custom;
 
+import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
+import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
+import net.fabricmc.fabric.impl.attachment.AttachmentRegistryImpl;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.s0larj.prismium.Prismium;
 import net.s0larj.prismium.entity.ModEntities;
 import net.s0larj.prismium.item.ModItems;
 import net.minecraft.client.util.math.Vector2f;
+import net.s0larj.prismium.item.custom.TomahawkItem;
 
 public class TomahawkProjectileEntity extends PersistentProjectileEntity {
 
     private float rotation;
     public Vector2f groundedOffset;
+
 
     public TomahawkProjectileEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
         super(entityType, world);
@@ -39,19 +47,19 @@ public class TomahawkProjectileEntity extends PersistentProjectileEntity {
         return rotation;
     }
 
+
     public boolean isGrounded(){
         return inGround;
     }
 
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
-        super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
         entity.damage(this.getDamageSources().thrown(this, this.getOwner()), 4);
 
         if (!this.getWorld().isClient()) {
             this.getWorld().sendEntityStatus(this, (byte)3);
-            this.discard();
+            this.setVelocity(this.getVelocity().multiply(-0.01, -0.1, -0.01));
         }
     }
 
@@ -71,10 +79,10 @@ public class TomahawkProjectileEntity extends PersistentProjectileEntity {
         if (blockHitResult.getSide() == Direction.WEST) {
             groundedOffset = new Vector2f(215f,90f);
         }
-        if (blockHitResult.getSide() == Direction.UP) {
+        if (blockHitResult.getSide() == Direction.DOWN) {
             groundedOffset = new Vector2f(115f,180f);
         }
-        if (blockHitResult.getSide() == Direction.DOWN) {
+        if (blockHitResult.getSide() == Direction.UP) {
             groundedOffset = new Vector2f(285f,180f);
         }
 

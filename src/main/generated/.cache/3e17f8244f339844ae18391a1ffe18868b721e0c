@@ -1,8 +1,8 @@
-// 1.21	2026-03-11T19:01:53.3444373	Prismium/Model Definitions
+// 1.21	2026-03-20T19:43:25.166991	Prismium/Model Definitions
 b58b3254cd606fe466811a4d0119705a06c5b5c8 assets\prismium\models\item\prismium_leggings.json
 962e2da6d32710d57a7bab8f75b3f01ee5529eb3 assets\prismium\models\item\prismium_leggings_redstone_trim.json
-b91002bdf81f6f2a20e0499f103ace47ab0d074c assets\prismium\models\item\prismium_chestplate.json
 f23fc49aea98a27581fc97f57a3c62134aee0385 assets\prismium\models\item\prismium_helmet_gold_trim.json
+b91002bdf81f6f2a20e0499f103ace47ab0d074c assets\prismium\models\item\prismium_chestplate.json
 c6e1cc408fa3d6ad30b7dbc5f22f1e8c059ae80a assets\prismium\models\item\prismium_chestplate_netherite_trim.json
 61d1d6a9e8d4e3a4923a56ee5d2236348e09d5f3 assets\prismium\models\item\prismium_helmet_quartz_trim.json
 61c00e98164cd7744b0f35f6ad32de17acbb44f1 assets\prismium\blockstates\prismarite_block.json
@@ -44,8 +44,8 @@ ddd9811026a9ea7ffeecbfb752f0fbf45f9e6f4f assets\prismium\models\item\prismium_le
 412a4a6c792ee851e5db17dbc83beec2dbf4f1ad assets\prismium\models\item\prismium_boots_quartz_trim.json
 1193d5144f08c509963c5c4ac2be923ae7324266 assets\prismium\models\item\prismium_leggings_emerald_trim.json
 7c8e6fed780f7977f5e28b3a34613231e2ee88ea assets\prismium\models\item\prismium_boots_redstone_trim.json
-1f61418790907d43d259c394df036ef41cd572ee assets\prismium\models\block\magic_block.json
 294ba7fbdff82c68fb38ff801970080d37100f64 assets\prismium\models\item\prismium_chestplate_copper_trim.json
+1f61418790907d43d259c394df036ef41cd572ee assets\prismium\models\block\magic_block.json
 b2b0eecacd41ec98d644e0de31ce6dc3d6a7ff3a assets\prismium\models\item\prismarite.json
 0cdc5747a82b78b2a985e67ab00fa15a750b0c4b assets\prismium\models\item\prismium_boots_copper_trim.json
 cbe18c59e9ce58c3a69d3ed786a19d24fbcdc6ec assets\prismium\models\item\prismarite_block.json
