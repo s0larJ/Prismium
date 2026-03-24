@@ -31,16 +31,14 @@ public class TomahawkItem extends Item {
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.NEUTRAL, 0.5f, 0.4f);
 
         if (!world.isClient) {
-            if (itemStack.get(ModDataComponentTypes.THROWN) == null || Boolean.FALSE.equals(itemStack.get(ModDataComponentTypes.THROWN))) {
-                itemStack.set(ModDataComponentTypes.THROWN, true);
-                itemStack.set(ModDataComponentTypes.TOMA, tomahawk.getId());
+            if (itemStack.get(ModDataComponentTypes.TOMA) == null) {
                 tomahawk = new TomahawkProjectileEntity(world, user);
+                itemStack.set(ModDataComponentTypes.TOMA, tomahawk.getId());
                 tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.0f, 0f);
                 world.spawnEntity(tomahawk);
             }else {
-                itemStack.set(ModDataComponentTypes.THROWN, false);
                 world.getEntityById(itemStack.get(ModDataComponentTypes.TOMA)).discard();
-                System.out.println(itemStack.get(ModDataComponentTypes.TOMA));
+                itemStack.set(ModDataComponentTypes.TOMA, null);
             }
         }
 
